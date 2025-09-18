@@ -1,0 +1,200 @@
+/* =========================
+   GLOBAL BASE
+========================= */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Particles background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  z-index: -1;
+}
+
+/* =========================
+   LAYOUT CONTAINER
+========================= */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #34495e;
+  text-align: center;
+}
+
+legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 40px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ffcc;
+}
+
+/* =========================
+   FORMS & INPUTS
+========================= */
+fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Send button */
+.send-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ffcc, #0077ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+  width: 100%;
+}
+.send-btn:hover {
+  background: linear-gradient(90deg, #0077ff, #00ffcc);
+  box-shadow: 0 0 15px rgba(0,255,200,0.8);
+}
+
+/* =========================
+   GALLERY
+========================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 60px 20px;
+  margin: 40px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background-color: #000000;
+  color: #ecf0f1;
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 40px;
+  border-top: 4px solid #000000;
+  border-radius: 0 0 12px 12px;
+}
+
+.site-footer p {
+  margin: 8px 0;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
